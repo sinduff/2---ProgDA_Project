@@ -27,7 +27,20 @@ The notebook also contains a number of examples, each of which are outlined in t
 ### Introduction
 The first cell in the notebook outlines an introduction to the notebook.  It outlines the approach of the author, a well as the chosen dataset.
 
-The first cell containg code that the user sees is the one importing the python standard libaries.  The user must run this cell first **before** any of the following code cells are run to ensure that the subsequent cells will operater correctly.
+The first cell containg code that the user sees is the one importing the python standard libaries.  The user must run this cell first **before** any of the following code cells are run to ensure that the subsequent cells will operater correctly.  Whilst completing the project, the author had to update the Pandas libary as well as the Seaborn libary.  Thi wa to ensure the correct running of code and display of the relevant plots.
+
+As an example, the code used to update the Seaborn libary was 
+**!pip install seaborn --upgrade**
+
+Once Seaborn was updated, the new version was imported into the notebook, and confirmed as version 0.11.0 by using;
+***import seaborn as sns
+sns.__version__***
+
+**%matplotlib inline** was included in the libary section to ensure that plots using matplotlib displayed correctly.
+
+**sns.set_style("darkgrid")** set the style of the notebook to have dark grey plots behind each graph.
+
+**rng = default_rng()** set a global variable called **rng** which can be used in later in the notebook when creating random numbers.
 
 ### Section 1 - Choosing a dataset
 This section outlines why the UCI dataset on wine was choosen.  How the dataset was cleaned of errors was also outlined.
